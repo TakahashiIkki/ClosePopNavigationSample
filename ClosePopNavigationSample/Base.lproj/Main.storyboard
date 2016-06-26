@@ -49,7 +49,21 @@
                     <view key="view" contentMode="scaleToFill" id="gY9-uK-8tu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtD-ZX-fyn">
+                                <rect key="frame" x="263" y="285" width="75" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="　戻　る　"/>
+                                <connections>
+                                    <action selector="onTouchReturnButton:" destination="rXY-2C-J1C" eventType="touchUpInside" id="XBD-zF-CBf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EtD-ZX-fyn" firstAttribute="centerX" secondItem="gY9-uK-8tu" secondAttribute="centerX" id="t2C-vS-Har"/>
+                            <constraint firstItem="EtD-ZX-fyn" firstAttribute="centerY" secondItem="gY9-uK-8tu" secondAttribute="centerY" id="zli-hR-SmC"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="遷移先" id="stA-wj-cSX"/>
                 </viewController>
